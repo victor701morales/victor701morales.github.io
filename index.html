@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alucin Caps</title>
+    <script src="https://kit.fontawesome.com/cbb2f094f3.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        header{
+            width: 100%;
+            background: transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 50px;
+            background: transparent;
+            z-index: 1;
+        }
+        img{
+            display: block;
+            width: 100%;
+        }
+        .fondo{
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(https://wallpapers.com/images/hd/aesthetic-mlb-baseball-caps-4hlo0yyfqdqqy3ku.jpg);
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            z-index: -1;
+            margin-bottom: 60px;
+        }
+        .filtro{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .filtros ul li{
+            padding: 15px 20px;
+            margin: 5px 0px;
+            border: 1px solid #00011E;
+            list-style-type: none;
+        }
+        
+        .comprar-boton{
+            position: absolute; 
+            visibility: hidden;
+            text-decoration: none; 
+            top: 100%; 
+            left: 20%;
+            color: #ffff; 
+            border: none;
+            padding: 12px 50px; 
+            border-radius: 10px; 
+            background-color: aqua; 
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .articulo:hover .comprar-boton{
+            visibility: visible;
+            opacity: 1;
+        }
+
+        @media (max-width: 700px){
+            .filtro{
+                display: none;
+            }
+            .comprar-boton{
+                display: block;
+            }
+            .articulo{
+                flex-grow: .4;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <p style="color: #fff; font-size: 40px; font-weight: 400; padding: 30px;">Alucin Caps</p>
+            <div>
+                <a href="#mirar-productos" style="list-style-type: none; text-decoration: none; font-size: 30px; color: #ffff;">Catálogo</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="fondo">
+        
+    </section>
+    
+    <section class="principal" id="mirar-productos" style="display: flex; width: 100%; ">
+        <div class="filtro" style="width: 10%;">
+            <p style="font-size: 25px; font-weight: 800; margin-bottom: 5px;">Filtros</p>
+            <div class="filtros" style="display: flex;">
+            <ul>
+                <li><a href="" style="text-decoration: none; color: #00011E; font-weight: 600;">$20 - $30</a></li>
+                <li><a href="" style="text-decoration: none; color: #00011E; font-weight: 600;">$30 - $40</a></li> 
+                <li><a href="" style="text-decoration: none; color: #00011E; font-weight: 600;">$40 - $50</a></li>
+                <li><a href="" style="text-decoration: none; color: #00011E; font-weight: 600;">$50+</a> </li>
+            </ul></div>
+            
+        </div>
+        <div class="productos" style="display: flex; flex-wrap: wrap; width: 90%; justify-content: space-around;">
+            <div class="articulo"  style="width: 300px; position: relative; margin: 0 5px 40px 5px;">
+                <a href="https://latiendadelasgorras.com/products/cock-will-prevail-trucker-black"><img src="Imagenes Gorras/Cock Will Prevail Trucker Black.webp" alt=""></a>
+                <div style="margin: 5px 0px 0 3px;">
+                    <p style="font-size: 15px; color: #9A9AAF; margin-bottom: 3px;">ALUCIN CAPS</p>
+                    <h2 ><a href="https://latiendadelasgorras.com/products/cock-will-prevail-trucker-black" style="text-decoration: none; list-style-type: none;font-size: 25px; margin-bottom: 5px; color: #00011E; font-weight: 800;">Cock Will Prevail Trucker Black</a></h2>
+                    <p style="font-size: 20px; color: #00011E; margin-bottom: 3px;">$25</p>
+                </div>
+                <a href="https://latiendadelasgorras.com/products/cock-will-prevail-trucker-black" class="comprar-boton" >COMPRAR</a>
+            </div>
+
+            <div class="articulo"  style="width: 300px; position: relative; margin: 0 5px 40px 5px;">
+                <a href="https://latiendadelasgorras.com/products/dorbz-the-farm-patchwork-trucker"><img src="Imagenes Gorras/Dorbz The Farm Patchwork Trucker.webp" alt=""></a>
+                <div style="margin: 5px 0px 0 3px;">
+                    <p style="font-size: 15px; color: #9A9AAF; margin-bottom: 3px;">ALUCIN CAPS</p>
+                    <h2 ><a href="https://latiendadelasgorras.com/products/dorbz-the-farm-patchwork-trucker" style="text-decoration: none; list-style-type: none;font-size: 25px; margin-bottom: 5px; color: #00011E; font-weight: 800;">Dorbz The Farm Patchwork Trucker</a></h2>
+                    <p style="font-size: 20px; color: #00011E; margin-bottom: 3px;">$20</p>
+                </div>
+                <a href="https://latiendadelasgorras.com/products/dorbz-the-farm-patchwork-trucker" class="comprar-boton" >COMPRAR</a>
+            </div>
+
+
+            <div class="articulo"  style="width: 300px; position: relative; margin: 0 5px 40px 5px;">
+                <a href="https://latiendadelasgorras.com/products/fire-trucker"><img src="Imagenes Gorras/Fire Trucker.webp" alt=""></a>
+                <div style="margin: 5px 0px 0 3px;">
+                    <p style="font-size: 15px; color: #9A9AAF; margin-bottom: 3px;">ALUCIN CAPS</p>
+                    <h2 ><a href="https://latiendadelasgorras.com/products/fire-trucker" style="text-decoration: none; list-style-type: none;font-size: 25px; margin-bottom: 5px; color: #00011E; font-weight: 800;">Fire Trucker</a></h2>
+                    <p style="font-size: 20px; color: #00011E; margin-bottom: 3px;">$30</p>
+                </div>
+                <a href="https://latiendadelasgorras.com/products/fire-trucker" class="comprar-boton" >COMPRAR</a>
+            </div>
+
+
+            <div class="articulo"  style="width: 300px; position: relative; margin: 0 5px 40px 5px;">
+                <a href="https://latiendadelasgorras.com/products/horse-play-trucker-nino"><img src="Imagenes Gorras/Horse Play Trucker Niño.webp" alt=""></a>
+                <div style="margin: 5px 0px 0 3px;">
+                    <p style="font-size: 15px; color: #9A9AAF; margin-bottom: 3px;">ALUCIN CAPS</p>
+                    <h2 ><a href="https://latiendadelasgorras.com/products/horse-play-trucker-nino" style="text-decoration: none; list-style-type: none;font-size: 25px; margin-bottom: 5px; color: #00011E; font-weight: 800;">Horse Play Trucker Niño</a></h2>
+                    <p style="font-size: 20px; color: #00011E; margin-bottom: 3px;">$35</p>
+                </div>
+                <a href="https://latiendadelasgorras.com/products/horse-play-trucker-nino" class="comprar-boton" >COMPRAR</a>
+            </div>
+
+
+            <div class="articulo"  style="width: 300px; position: relative; margin: 0 5px 40px 5px;">
+                <a href="https://latiendadelasgorras.com/products/one-pack-snapback"><img src="Imagenes Gorras/One Pack Snapback.webp" alt=""></a>
+                <div style="margin: 5px 0px 0 3px;">
+                    <p style="font-size: 15px; color: #9A9AAF; margin-bottom: 3px;">ALUCIN CAPS</p>
+                    <h2 ><a href="https://latiendadelasgorras.com/products/one-pack-snapback" style="text-decoration: none; list-style-type: none;font-size: 25px; margin-bottom: 5px; color: #00011E; font-weight: 800;">One Pack Snapback</a></h2>
+                    <p style="font-size: 20px; color: #00011E; margin-bottom: 3px;">$45</p>
+                </div>
+                <a href="https://latiendadelasgorras.com/products/one-pack-snapback" class="comprar-boton" >COMPRAR</a>
+            </div>
+
+
+            <div class="articulo"  style="width: 300px; position: relative; margin: 0 5px 40px 5px;">
+                <a href="https://latiendadelasgorras.com/products/porcupine-100-trucker"><img src="Imagenes Gorras/Porcupine 100 Trucker.webp" alt=""></a>
+                <div style="margin: 5px 0px 0 3px;">
+                    <p style="font-size: 15px; color: #9A9AAF; margin-bottom: 3px;">ALUCIN CAPS</p>
+                    <h2 ><a href="https://latiendadelasgorras.com/products/porcupine-100-trucker" style="text-decoration: none; list-style-type: none;font-size: 25px; margin-bottom: 5px; color: #00011E; font-weight: 800;">Porcupine 100 Trucker</a></h2>
+                    <p style="font-size: 20px; color: #00011E; margin-bottom: 3px;">$36</p>
+                </div>
+                <a href="https://latiendadelasgorras.com/products/porcupine-100-trucker" class="comprar-boton" >COMPRAR</a>
+            </div>
+
+
+            <div class="articulo"  style="width: 300px; position: relative; margin: 0 5px 40px 5px;">
+                <a href="https://latiendadelasgorras.com/products/stealth-explorer-snapback"><img src="Imagenes Gorras/Stealth Explorer Snapback.webp" alt=""></a>
+                <div style="margin: 5px 0px 0 3px;">
+                    <p style="font-size: 15px; color: #9A9AAF; margin-bottom: 3px;">ALUCIN CAPS</p>
+                    <h2 ><a href="https://latiendadelasgorras.com/products/stealth-explorer-snapback" style="text-decoration: none; list-style-type: none;font-size: 25px; margin-bottom: 5px; color: #00011E; font-weight: 800;">Stealth Explorer Snapback</a></h2>
+                    <p style="font-size: 20px; color: #00011E; margin-bottom: 3px;">$42</p>
+                </div>
+                <a href="https://latiendadelasgorras.com/products/stealth-explorer-snapback" class="comprar-boton" >COMPRAR</a>
+            </div>
+
+
+            <div class="articulo"  style="width: 300px; position: relative; margin: 0 5px 40px 5px;">
+                <a href="https://latiendadelasgorras.com/products/v2-deadly-trucker-black"><img src="Imagenes Gorras/V2 Deadly Trucker Black.webp" alt=""></a>
+                <div style="margin: 5px 0px 0 3px;">
+                    <p style="font-size: 15px; color: #9A9AAF; margin-bottom: 3px;">ALUCIN CAPS</p>
+                    <h2 ><a href="https://latiendadelasgorras.com/products/v2-deadly-trucker-black" style="text-decoration: none; list-style-type: none;font-size: 25px; margin-bottom: 5px; color: #00011E; font-weight: 800;">V2 Deadly Trucker Black</a></h2>
+                    <p style="font-size: 20px; color: #00011E; margin-bottom: 3px;">$60</p>
+                </div>
+                <a href="https://latiendadelasgorras.com/products/v2-deadly-trucker-black" class="comprar-boton" >COMPRAR</a>
+            </div>
+            
+            
+            <div class="articulo"  style="width: 300px; position: relative; margin: 0 5px 40px 5px;">
+                <a href="https://latiendadelasgorras.com/products/v2-jackal-trucker-black"><img src="Imagenes Gorras/V2 Jackal Trucker Black.webp" alt=""></a>
+                <div style="margin: 5px 0px 0 3px;">
+                    <p style="font-size: 15px; color: #9A9AAF; margin-bottom: 3px;">ALUCIN CAPS</p>
+                    <h2 ><a href="https://latiendadelasgorras.com/products/v2-jackal-trucker-black" style="text-decoration: none; list-style-type: none;font-size: 25px; margin-bottom: 5px; color: #00011E; font-weight: 800;">V2 Jackal Trucker Black</a></h2>
+                    <p style="font-size: 20px; color: #00011E; margin-bottom: 3px;">$58</p>
+                </div>
+                <a href="https://latiendadelasgorras.com/products/v2-jackal-trucker-black" class="comprar-boton" >COMPRAR</a>
+            </div>
+
+
+        </div>
+    </section>
+</body>
+</html>
